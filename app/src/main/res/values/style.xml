@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="search_btn_style">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="search_btn" parent="search_btn_style">
+        <item name="android:background">@drawable/baseline_search_24</item>
+        <!--        <item name="srcCompat">@drawable/search_vec</item>-->
+        <!--        <item name="android:background">@android:color/transparent</item>-->
+    </style>
+
+    <style name="menu_btn" parent="search_btn_style">
+        <item name="android:background">@drawable/baseline_menu_24</item>
+    </style>
+
+
+    <style name="navBottomBarStyle">
+        <item name="enforceTextAppearance">true</item>
+        <item name="enforceMaterialTheme">true</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="itemIconTint">@color/grey</item>
+        <item name="itemRippleColor">@color/orange</item>
+        <item name="itemTextAppearanceInactive">?attr/textAppearanceCaption</item>
+        <item name="itemTextAppearanceActive">?attr/textAppearanceCaption</item>
+        <item name="itemTextColor">@color/orange</item>
+    </style>
+
+
+</resources>

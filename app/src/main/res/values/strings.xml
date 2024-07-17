@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Web_store</string>
+
+    <string name="bottom_menu_home">Home</string>
+    <string name="bottom_menu_basket">Basket</string>
+    <string name="bottom_menu_user">User</string>
+
+    <string name="search">Search</string>
+    <string name="menu">Menu</string>
+    <string name="itemView">Item view</string>
+    <string name="main_group_content">main group image</string>
+    <string name="item_img_description">item_photo</string>
+    <string name="buy">Купити</string>
+    <string name="description">Опис:</string>
+    <string name="features">Характеристики:</string>
+    <string name="review">Відгуки покупців:</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="enter">Вхід</string>
+    <string name="authorization">Авторизація</string>
+    <string name="to_registration">Зареєструватися</string>
+    <string name="basket">Кошик</string>
+    <string name="registration">Реєстрація</string>
+    <string name="userName">Ім`я</string>
+    <string name="addtoBasket">Додати до кошика</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

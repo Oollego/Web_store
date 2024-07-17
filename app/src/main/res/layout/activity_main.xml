@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="step.learning.web_store.SearchBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/fragmentSearch"
+        />
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayoutSearch"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:paddingTop="10dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/menuButton"-->
+<!--            style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:icon="@drawable/baseline_menu_24"-->
+<!--            app:iconSize="30dp"-->
+<!--            android:paddingEnd="5dp"-->
+<!--            android:paddingStart="5dp"-->
+<!--           />-->
+
+
+<!--        <EditText-->
+<!--            android:layout_gravity=""-->
+<!--            android:id="@+id/search_et"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:inputType="text"-->
+<!--            android:text="@string/search" />-->
+<!--        <Button-->
+<!--            android:id="@+id/searchButton"-->
+<!--            style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:icon="@drawable/baseline_search_24"-->
+<!--            app:iconSize="30dp"-->
+<!--            android:paddingEnd="5dp"-->
+<!--            android:paddingStart="5dp"-->
+<!--            />-->
+
+<!--    </LinearLayout>-->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginBottom="10dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/fragmentSearch">
+
+    <LinearLayout
+        android:id="@+id/groupContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        />
+
+
+</ScrollView>
+<!--<androidx.fragment.app.FragmentContainerView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="100dp"-->
+<!--    android:name="step.learning.web_store.BottomMenu"-->
+<!--    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    android:id="@+id/bottomNavigationView"/>-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:menu="@menu/bottom_menu"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        app:itemIconSize="30dp"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+ />
+<!--    app:labelVisibilityMode="unlabeled"-->
+    <!--    style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
